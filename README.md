@@ -1,77 +1,64 @@
 ## Pyramid Principles Skills
 
-Structured thinking and communication toolkit based on the Pyramid Principle, SCQA, MECE issue trees, hypothesis‑driven problem solving, So What / Why So, and storyline design. This repository packages the `pyramid-principle` skill plus reference material and templates so you can reuse the same patterns across tools or projects.
+This skill is for **product managers and leaders who need to think clearly about messy, strategic problems**—launch decisions, pricing changes, growth plateaus, roadmap trade‑offs, org design, and more.
 
-### What’s in this repo
+Instead of staring at a blank page or a jumble of notes, you get a guided way to:
 
-- **Skill definition (`SKILL.md`)**: Top‑level description of the `pyramid-principle` skill (name, description, and how it routes between automatic and explicit modes).
-- **Embedded skill (`pyramid-principle-skill/SKILL.md`)**: Same core skill doc, intended to live alongside the supporting assets under `pyramid-principle-skill/`.
-- **Core methods (`pyramid-principle-skill/core/`)**  
-  - `scqa-framework.md`: How to frame Situation–Complication–Question–Answer.  
-  - `mece-issue-tree.md`: MECE and issue / hypothesis trees for breaking down problems.  
-  - `hypothesis-driven.md`: Hypothesis‑driven problem solving and proof points.  
-  - `so-what-why-so.md`: So What / Why So and the 7 So Whats for depth and rigor.  
-  - `storyline.md`: Turning analysis into compelling, executive‑ready storylines.
-- **Templates (`pyramid-principle-skill/templates/`)**  
-  - `quick-analysis.md`: 5–10 minute “good enough” structured take.  
-  - `deep-analysis.md`: 30–60 minute deep dive.  
-  - `strategy-doc.md`: 1+ hour, executive / board‑level strategy document.
-- **HTML report generator (`pyramid-principle-skill/scripts/generate-report.py`)**  
-  - Python script that turns structured JSON into a modern, interactive HTML report.
-- **Example report (`pyramid-principle-skill/assets/example-report.html`)**  
-  - Sample output you can open in a browser to see the style of report this skill can generate.
+- **Clarify the problem** so you and your stakeholders are actually solving the same thing.
+- **Break it down** into a small number of MECE branches instead of a wall of bullets.
+- **Form and test hypotheses** quickly, without boiling the ocean on analysis.
+- **Push to real insight** using So What / Why So and the 7 So Whats.
+- **Turn the thinking into a storyline** that’s ready for execs, a doc review, or a strategy deck.
 
-### How the skill works
+### What problems this helps with
 
-At a high level, the `pyramid-principle` skill does two things:
+- **“I’m not even sure what the real question is.”**  
+  The skill walks you through SCQA to get to a crisp, shared problem statement.
 
-- **Automatic mode (Problem Router)**: When a user gives a vague or open‑ended problem, the skill:  
-  - Diagnoses the problem type (ill‑defined, root cause, strategic decision, recommendation, sense‑making, or communication prep).  
-  - Recommends an appropriate methodology chain (e.g., SCQA → Issue Tree → Hypotheses → So What → Storyline).  
-  - Adjusts depth (quick vs deep vs strategy‑level) and output format (markdown vs HTML vs presentation‑ready).
-- **Explicit mode (Direct methods/templates)**: When a user asks for something specific (for example “frame this with SCQA”, “build an issue tree”, “do a deep‑analysis”, “create a strategy‑doc”), the skill jumps directly to the relevant core file or template under `core/` or `templates/` and runs that workflow.
+- **“I’m drowning in inputs and slides.”**  
+  You’ll use MECE issue trees and hypothesis trees to impose structure and decide what not to analyze.
 
-### Installing / using the skill
+- **“I have findings but no real insight or recommendation.”**  
+  So What / Why So forces you to keep asking “so what?” until you land on a concrete action or strategic implication.
 
-How you “install” this skill depends on your agent/runtime, but the pattern is:
+- **“I need something I can put in front of execs tomorrow.”**  
+  You can choose a quick analysis, a deeper doc, or a full strategy narrative depending on time and audience.
 
-1. **Copy the skill folder**  
-   - Place the `pyramid-principle-skill/` directory (and optionally the root `SKILL.md`) into your skills directory (for example a `skills/` or `.claude/skills/` folder, depending on your setup).
-2. **Register the skill**  
-   - Ensure your agent/tooling is configured to load `SKILL.md` files as skills and that the `name: pyramid-principle` block is discoverable.
-3. **Trigger it from conversations**  
-   - Implicitly: ask for help with ambiguous analysis/strategy problems, and let the problem router choose the method.  
-   - Explicitly: use trigger phrases like “use pyramid-principle”, “frame this with SCQA”, “build an issue tree”, “do a quick-analysis”, “do a deep-analysis”, or “create a strategy-doc”.
+### How it works (from your perspective)
 
-If you are using Cursor or another Codex‑style environment that already supports local skills, you can typically point the tool to this repo (or copy the folder in) and it will pick up `SKILL.md` automatically.
+You use this skill in two main ways:
 
-### Generating interactive HTML reports
+- **You bring a vague, fuzzy problem**  
+  - You describe the situation in your own words.  
+  - The skill classifies the problem (root cause, strategic decision, recommendation, sense‑making, comms prep).  
+  - It proposes an approach (for example: *SCQA → Issue Tree → Hypotheses → 7 So Whats → Storyline*), checks that this matches what you need, then walks you through each step with checkpoints.
 
-The `generate-report.py` script converts structured JSON into a polished HTML report that follows the Pyramid Principle:
+- **You already know what you want**  
+  Use plain language like:
+  - “Frame this with SCQA”  
+  - “Build an issue tree for this”  
+  - “Do a quick analysis I can use in a meeting”  
+  - “Do a deep analysis for a strategy doc”  
+  - “Turn this into an exec‑ready storyline”
+  
+  The skill will jump straight into the relevant method or template (SCQA, MECE issue tree, hypothesis‑driven, So What / Why So, storyline, quick/deep/strategy templates) and co‑create the content with you.
 
-- **Inputs**: A JSON file with keys like `title`, `subtitle`, `author`, `governing_thought`, `scqa`, `arguments`, `hypothesis`, `recommendations`, and `timeline`. See the `EXAMPLE_DATA` dict inside `generate-report.py` for a full schema.
-- **Outputs**: A single HTML file with:
-  - Executive summary and governing thought.  
-  - SCQA cards laid out responsively.  
-  - Expandable “Key Arguments” cards with evidence and So What call‑outs.  
-  - Optional hypothesis validation, recommendations, and implementation timeline.
+### What’s in this repo (if you want to dig deeper)
 
-Usage:
+- **Skill definition (`SKILL.md`)**: How the `pyramid-principle` skill wires together the methods below.  
+- **Core methods (`pyramid-principle-skill/core/`)**: SCQA, MECE issue trees, hypothesis‑driven problem solving, So What / Why So, and storyline building.  
+- **Templates (`pyramid-principle-skill/templates/`)**: Ready‑to‑fill frames for quick analysis, deep analysis, and full strategy docs.  
+- **HTML report generator (`pyramid-principle-skill/scripts/generate-report.py`)**: Turn structured JSON into a modern interactive report you can share with stakeholders. See `EXAMPLE_DATA` in the script and `assets/example-report.html` for an example.
 
-```bash
-# Generate an example report (no arguments)
-cd pyramid-principle-skill/scripts
-python generate-report.py
+### Picking the right “mode” as a PM
 
-# From your own JSON
-python generate-report.py input.json output.html
-```
+- **You have 15–30 minutes before a meeting**  
+  - Ask for a **quick analysis**: you’ll get SCQA, a simple structure, a few key arguments, and a clear recommendation you can speak to.
 
-You can then open the resulting HTML file directly in a browser or serve it from any static host.
+- **You’re doing a real strategy / product deep dive**  
+  - Use the **deep analysis** flow: SCQA → issue tree → hypotheses → evidence → 7 So Whats → synthesized storyline.
 
-### When to use which template
+- **You’re preparing for leadership or board**  
+  - Use the **strategy doc** flow: a governing thought, three key arguments, risks, and a concrete implementation path—plus an optional HTML report with interactive sections.
 
-- **Quick decision / prep (<30 minutes)**: Start from `templates/quick-analysis.md`.  
-- **Serious deep dive (30–60 minutes)**: Use `templates/deep-analysis.md` and chain in `core/mece-issue-tree.md` + `core/hypothesis-driven.md` + `core/so-what-why-so.md` as needed.  
-- **Executive / strategy work (1+ hour)**: Use `templates/strategy-doc.md`, plus `core/storyline.md` to turn your analysis into a narrative that’s ready for leadership review.
 
