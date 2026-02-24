@@ -17,28 +17,30 @@ A comprehensive structured thinking toolkit that automatically adapts to user ne
                       │
                       ▼
          ┌────────────────────────┐
-         │  EXPLICIT指定あり?    │
-         │  (template/method名)   │
+         │  Explicit method set?  │
+         │  (template/method name)│
          └────────────┬───────────┘
                       │
           ┌───────────┴───────────┐
           │                       │
           ▼ YES                   ▼ NO
    ┌──────────────┐      ┌──────────────────┐
-   │ 指定された    │      │ PROBLEM ROUTER   │
-   │ 分析を実行    │      │ (自動診断)       │
+   │ Run specified│      │ PROBLEM ROUTER   │
+   │ analysis     │      │ (auto-diagnosis) │
    └──────────────┘      └────────┬─────────┘
                                   │
                                   ▼
                          ┌──────────────────┐
-                         │ 問題タイプ診断    │
-                         │ + 分析提案       │
-                         │ + ユーザー確認   │
+                         │ Diagnose problem │
+                         │ + propose method │
+                         │ + confirm with   │
+                         │   user           │
                          └────────┬─────────┘
                                   │
                                   ▼
                          ┌──────────────────┐
-                         │ 合意後、分析実行  │
+                         │ After agreement, │
+                         │ run analysis     │
                          └──────────────────┘
 ```
 
