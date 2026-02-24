@@ -24,6 +24,18 @@ Instead of staring at a blank page or a jumble of notes, you get a guided way to
 - **“I need something I can put in front of execs tomorrow.”**  
   You can choose a quick analysis, a deeper doc, or a full strategy narrative depending on time and audience.
 
+### Brief explanation of the methods
+
+- **SCQA (Situation–Complication–Question–Answer)**: A simple storytelling frame that forces you to say: what’s going on (S), what changed or is painful (C), what big question that creates (Q), and your proposed answer (A). This is how you stop rambling context and get to a sharp “why this matters now” plus a clear recommendation.
+
+- **MECE issue trees**: A way to break a big question (“Why is growth slowing?”) into smaller buckets that don’t overlap (Mutually Exclusive) and don’t miss anything important (Collectively Exhaustive). In practice, you get a tree of 2–4 branches per level so you can see where to focus instead of chasing random bullets.
+
+- **Hypothesis‑driven problem solving**: Instead of analyzing everything, you write down a specific, testable belief (for example “SMB is our best growth segment because X, Y, Z”) and then list what would need to be true. You then look for data to quickly prove or disprove those few points, which is much faster than boiling the ocean.
+
+- **So What / Why So and the 7 So Whats**: A set of questions you ask yourself about every finding. “So what?” pushes you upward from data to impact and action; “Why so?” forces you to back up each claim with evidence. The “7 So Whats” is just asking “so what?” repeatedly until you land on a real decision or priority, not just a metric movement.
+
+- **Storyline / Pyramid Principle**: Once you’ve done the thinking, you turn it into a pyramid: one governing thought at the top (your main recommendation), supported by three key arguments, each with evidence underneath. This gives you a narrative you can use in a doc, a deck, or a live meeting without losing people in the weeds.
+
 ### How it works (from your perspective)
 
 You use this skill in two main ways:
