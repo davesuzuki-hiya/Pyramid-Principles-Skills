@@ -1,6 +1,6 @@
 ---
 name: pyramid-principle
-description: Structured thinking and communication framework used by McKinsey, BCG, and Bain consultants. AUTOMATICALLY activates for any problem-solving, analysis, strategy, or recommendation request - Claude will diagnose the problem type and recommend the appropriate analysis depth. Also responds to explicit requests like "use pyramid-principle", "SCQA", "MECE", "issue tree", "hypothesis-driven", "so what analysis". Handles both vague requests ("help me think through this") and specific requests ("do a deep-analysis on X").
+description: Structured thinking and communication framework used by McKinsey, BCG, and Bain consultants. AUTOMATICALLY activates for any problem-solving, analysis, strategy, or recommendation request - Codex will diagnose the problem type and recommend the appropriate analysis depth. Also responds to explicit requests like "use pyramid-principle", "SCQA", "MECE", "issue tree", "hypothesis-driven", "so what analysis". Handles both vague requests ("help me think through this") and specific requests ("do a deep-analysis on X").
 ---
 
 # Pyramid Principle Skill
@@ -207,7 +207,7 @@ SCQA → Issue Tree → Hypothesis per branch → Evidence gathering
 ```
 User: "Our growth is slowing down and I'm not sure why or what to do"
 
-Claude: "Let me help you work through this systematically.
+Codex: "Let me help you work through this systematically.
 
 **Problem Type:** Root Cause + Recommendation (combined)
 **My Understanding:** Growth metrics are declining, cause unknown, need both diagnosis and action plan
@@ -233,7 +233,7 @@ Does this approach work for you?"
 ```
 User: "Do a SCQA analysis on our pricing strategy"
 
-Claude: [Immediately uses core/scqa-framework.md]
+Codex: [Immediately uses core/scqa-framework.md]
 
 "Here's the SCQA framing for your pricing strategy:
 
@@ -258,7 +258,7 @@ I can then build out the full analysis or adjust the framing."
 ```
 User: "I have a meeting in 20 minutes, help me think through whether we should launch in UK or Germany first"
 
-Claude: "Got it - let me give you a quick-analysis you can use in that meeting.
+Codex: "Got it - let me give you a quick-analysis you can use in that meeting.
 
 **SCQA (30 sec version):**
 - S: Ready to expand to Europe, budget for one market
@@ -285,7 +285,7 @@ Want me to elaborate on any point before your meeting?"
 ```
 User: "Analyze our competitor landscape - but keep it high level, don't need a full deep dive"
 
-Claude: "Understood - I'll do a focused quick-analysis on competitors.
+Codex: "Understood - I'll do a focused quick-analysis on competitors.
 
 [Uses quick-analysis template but applies to competitive analysis]
 

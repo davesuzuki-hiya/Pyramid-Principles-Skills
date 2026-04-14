@@ -2,6 +2,25 @@
 
 This skill is for **product managers and leaders who need to think clearly about messy, strategic problems**—launch decisions, pricing changes, growth plateaus, roadmap trade‑offs, org design, and more.
 
+### Local setup in Codex
+
+The actual skill lives in `pyramid-principle-skill/`.
+
+From the repo root, link that folder into `~/.codex/skills` so Codex can load it:
+
+```bash
+mkdir -p ~/.codex/skills
+ln -s "$(pwd)/pyramid-principle-skill" ~/.codex/skills/pyramid-principle
+```
+
+Then restart Codex to pick up the skill.
+
+The HTML report generator is self-contained and can be run directly:
+
+```bash
+python3 pyramid-principle-skill/scripts/generate-report.py
+```
+
 Instead of staring at a blank page or a jumble of notes, you get a guided way to:
 
 - **Clarify the problem** so you and your stakeholders are actually solving the same thing.
@@ -72,5 +91,4 @@ You use this skill in two main ways:
 
 - **You’re preparing for leadership or board**  
   - Use the **strategy doc** flow: a governing thought, three key arguments, risks, and a concrete implementation path—plus an optional HTML report with interactive sections.
-
 
